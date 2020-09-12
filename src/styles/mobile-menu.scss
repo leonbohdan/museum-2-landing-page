@@ -1,0 +1,59 @@
+.mobile-menu {
+  $blockName: &;
+
+  &__toggler {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 4;
+  }
+
+  &__label,
+  &__label::before,
+  &__label::after {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $c-white-text;
+    transition: 0.6s;
+  }
+
+  &__label {
+    cursor: pointer;
+    top: 4.85%;
+  }
+
+  &__label::before {
+    content: "";
+    transform: translateY(-8px);
+  }
+
+  &__label::after {
+    content: "";
+    transform: translateY(8px);
+  }
+
+  &__toggler:checked + #{$blockName}__label {
+    width: 0;
+    // opacity: 0;
+    // visibility: hidden;
+    z-index: 3;
+  }
+
+  &__toggler:checked + #{$blockName}__label::before {
+    transform: rotate(45deg) translate(0);
+  }
+
+  &__toggler:checked + #{$blockName}__label::after {
+    transform: rotate(-45deg) translate(0);
+  }
+
+  &__toggler:checked ~ .hidden-menu {
+    transform: translateX(-1125px);
+  }
+}

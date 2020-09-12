@@ -1,0 +1,21 @@
+.button {
+  width: 270px;
+  height: 60px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  color: $c-white-text;
+  background-color: $red-bgcolor;
+  transition: box-shadow 0.2s, background-color 0.3s ease-in, color 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 7px 5px rgba(28,27,41,1);
+    background-color: $main-bgcolor;
+    color: $c-red-text;
+  }
+}

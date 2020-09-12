@@ -2,3 +2,44 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
+.events__calendar,
+.exhibitions__archive,
+.news__bottom {
+  position: absolute;
+  right: 212px;
+  cursor: pointer;
+
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  color: $c-black-big-text;
+
+  @media (max-width: 930px) {
+    padding: 11px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+.events__calendar::after,
+.exhibitions__archive::after,
+.news__bottom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-left: 20px;
+  width: 70px;
+  height: 1px;
+  background: $c-black-big-text;
+
+  @media (max-width: 930px) {
+    top: 100%;
+    margin-left: 0;
+    width: auto;
+    left: 0;
+    right: 0;
+  }
+}

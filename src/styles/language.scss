@@ -1,0 +1,32 @@
+.language {
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+
+  @media (max-width: 630px) {
+    display: none;
+  }
+
+  &__choose {
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    -moz-appearance: none;
+
+    background-color: $header-footer-bgcolor;
+    color: $c-white-text;
+    border-style: none;
+    outline: none;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__value:checked {
+    font-weight: 700;
+    background: $header-footer-bgcolor;
+    color: $c-black-big-text;
+  }
+}

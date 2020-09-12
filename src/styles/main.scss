@@ -2,6 +2,40 @@
 @import "fonts";
 @import "typography";
 
+@import "mobile-menu";
+@import "header";
+@import "nav";
+@import "content-container";
+@import "language";
+@import "button";
+@import "hidden-menu";
+@import "main-menu";
+@import "footer";
+
+@import "exhibitions";
+@import "events";
+@import "visit";
+@import "news";
+@import "subscribe";
+
+@import "exhibition";
+@import "event";
+@import "container";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
 body {
-  background: $c-gray;
+  background-color: $main-bgcolor;
+}
+
+.main {
+  background-color: $main-bgcolor;
 }

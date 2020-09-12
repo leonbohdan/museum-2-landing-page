@@ -1,13 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>Museum 2</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="shortcut icon"
+      href="./images/museum.png"
+      type="image/x-icon"
+    >
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header" id="home">
+      <div class="content-container header__content-container">
+
+        <nav class="nav header__nav">
+          <a href="#" class="nav__logo"></a>
+
+          <div class="nav__container">
+            <div class="mobile-menu nav__mobile-menu">
+              <input
+                id="menu"
+                class="mobile-menu__toggler"
+                type="checkbox"
+              >
+
+              <label for="menu" class="mobile-menu__label"></label>
+
+              <div class="hidden-menu mobile-menu__hidden-menu">
+
+                <div class="hidden-menu__info">
+                  <p class="hidden-menu__working-hours">Розклад сьогодні:
+                    <span class="hidden-menu__details">12:00 - 19:00</span>
+                  </p>
+                  <p class="hidden-menu__address">Адреса:
+                    <span class="hidden-menu__details">Київ, вул. М. Грушевського, 6</span>
+                  </p>
+                </div>
+
+                <div class="hidden-menu__navbar">
+                  <div class="hidden-menu__nav">
+                    <ul class="hidden-menu__nav-list">
+                      <li class="hidden-menu__nav-item">
+                        <a href="#visit" class="hidden-menu__nav-link">Спланувати візит</a>
+                      </li>
+                      <li class="hidden-menu__nav-item">
+                        <a href="#events" class="hidden-menu__nav-link">Виставки та події</a>
+                      </li>
+                      <li class="hidden-menu__nav-item">
+                        <a href="#exhibitions" class="hidden-menu__nav-link">Колекція</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="hidden-menu__actions">
+                  <button class="button hidden-menu__button-buy">Купити квиток</button>
+                  <button class="button hidden-menu__button-member">Стати членом</button>
+                </div>
+
+                <div class="hidden-menu__img-container">
+                  <img
+                    src="./images/boy-with-paints.svg"
+                    alt="Boy with paints"
+                    class="hidden-menu__image"
+                  >
+                </div>
+
+              </div>
+            </div>
+
+            <div class="language nav__language">
+              <select class="language__choose" name="language">
+                <option class="language__value" value="#UA">UA</option>
+                <option class="language__value" value="#EN">EN</option>
+                <option class="language__value" value="#RU">RU</option>
+              </select>
+            </div>
+          </div>
+
+        </nav>
+
+        <div class="header__bottomside">
+          <div class="main-menu header__main-menu">
+            <div class="main-menu__title">
+              <p class="main-menu__dates">10 серпня - 10 листопада</p>
+              <h1 class="main-menu__title-inner">Мистецтво <br>
+                <span class="main-menu__title-wrap">ХІХ - ХХ ст.</span>
+              </h1>
+              <p class="main-menu__description">
+                Внесок українських митців у світову культуру 19-20ст
+              </p>
+              <button class="button main-menu__button">Купити квиток</button>
+            </div>
+
+            <p class="main-menu__bottom-info">10.08 - 10.10</p>
+
+            <div class="main-menu__image-box" title="Дівчина з Поділля">
+              <img
+                src="./images/header_girl.png"
+                alt="Дівчина з Поділля В. Тропінін"
+                class="main-menu__image"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="exhibitions main__exhibitions" id="exhibitions">
+        <div class="container">
+          <div class="exhibitions__wrapper">
+            <h2 class="exhibitions__title main__title">Актуальтні виставки</h2>
+            <h2 class="exhibitions__dates">11.07 - 22.09</h2>
+            <article class="exhibition exhibition--shifted">
+              <p class="exhibition__decor">Виставка “Ангели”</p>
+              <h3 class="exhibition__name">Кураторська виставка “Ангели”</h3>
+              <p class="exhibition__desc">
+                Виставковий проект «Ангели» – знакова подія для української культури і водночас наймасштабніший...
+              </p>
+              <button class="button exhibition__button">Купити квиток</button>
+            </article>
+            <img
+              class="exhibitions__img"
+              src="./images/1_block.png"
+              alt="angel"
+            >
+
+            <article class="exhibition exhibition--middle">
+              <p class="exhibition__label">Діє постійно</p>
+              <h3 class="exhibition__name">Мистецтво ХХ ст. — XXI ст.</h3>
+              <p class="exhibition__desc exhibition__desc--middle">
+                Знакові роботи Алли Горської, Миколи Самокиша, Федора
+                Кричевського та інших митців.
+              </p>
+              <button class="button exhibition__button">Купити квиток</button>
+            </article>
+            <img
+              class="exhibitions__img"
+              src="./images/2_block.png"
+              alt="kiss"
+            >
+
+            <article class="exhibition exhibition--shifted">
+              <p class="exhibition__label">Діє постійно</p>
+              <h3 class="exhibition__name">Стародавнє мистецтво</h3>
+              <p class="exhibition__desc">
+                Визначні приклади стародавнього українського іконопису та живопису
+              </p>
+              <button class="button exhibition__button">Купити квиток</button>
+            </article>
+            <img
+              class="exhibitions__img"
+              src="./images/3_block.png"
+              alt="cosak"
+            >
+            <img
+              class="exhibitions__img--small"
+              src="./images/cosak-mobile.png"
+              alt="cosak-mobile"
+            >
+            <p class="exhibitions__archive">Архів виставок</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="events main__events" id="events">
+        <div class="container">
+          <div class="events__wrapper">
+            <h2 class="events__title main__title">Найближчі події</h2>
+            <article class="event event__hudimov">
+              <p class="event__date">
+                14.08 <br>
+                <span class="event__time">13:00</span>
+              </p>
+              <p class="event__label">Екскурсія</p>
+              <h3 class="event__name">Кураторські екскурсії від Павла Гудімова </h3>
+              <p class="event__desc">
+                Таємниці підготовки, історії експонатів, магія дійства до і в момент вашої присутності –
+                розгортатиметься...
+              </p>
+              <button class="button event__button">Зареєструватись</button>
+            </article>
+
+            <article class="event event__australia">
+              <p class="event__date event__date--aus">
+                18.08 <br>
+                <span class="event__time event__time--aus">14:00</span>
+              </p>
+              <p class="event__label">Майстер-клас</p>
+              <h3 class="event__name">Подорож до Австралії</h3>
+              <p class="event__desc">
+                Цієї неділі о 14:00 на арт-мандрівників чекає останній пункт кругосвітньої подорожі - Австралія.
+              </p>
+              <button class="button event__button">Зареєструватись</button>
+            </article>
+
+            <p class="events__calendar">Календар подій</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit main__visit" id="visit">
+        <div class="container">
+          <div class="visit__wrapper">
+            <div class="visit__info">
+              <h1 class="visit__title">Сплануйте візит до музею</h1>
+              <p class="visit__desc">Оберіть зручний день, зареєструйтесь на події, що цікавлять, купіть квиток заздалегідь, щоб ніщо не завадило вам насолоджуватись мистецтвом</p>
+              <button class="button visit__button">Почати</button>
+            </div>
+            <div class="visit__img-container">
+              <img
+                class="visit__image"
+                src="./images/girl_2.png"
+                alt="girl"
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news main__news" id="news">
+        <div class="container">
+          <h2 class="news__title main__title">Новини</h2>
+          <div class="news__wrapper">
+            <article class="news__card">
+              <img
+                class="news__img"
+                src="./images/news_1.jpg"
+                alt="1"
+              >
+              <div class="news__info">
+                <p class="news__date">
+                  <time datetime="2019-08-09">9 серпня 2019</time>
+                </p>
+                <h3 class="news__heading">Оголошення переможця</h3>
+                <p class="news__desk">
+                  Друзі, сьогодні п'ятниця! А це означає, що час оголосити переможця розіграшу...
+                </p>
+              </div>
+            </article>
+
+            <article class="news__card">
+              <img
+                class="news__img"
+                src="./images/news_2.jpg"
+                alt="2"
+              >
+              <div class="news__info">
+                <p class="news__date">
+                  <time datetime="2019-08-09">9 серпня 2019</time>
+                </p>
+                <h3 class="news__heading">Міжнародний день котів</h3>
+                <p class="news__desk">
+                  Музей з левами не може просто так взяти і пропустити Міжнародний день котів!
+                </p>
+              </div>
+            </article>
+
+            <article class="news__card">
+              <img
+                class="news__img"
+                src="./images/news_3.jpg"
+                alt="3"
+              >
+              <div class="news__info">
+                <p class="news__date">
+                  <time datetime="2019-08-09">9 серпня 2019</time>
+                </p>
+                <h3 class="news__heading">200 років П. Кулішу</h3>
+                <p class="news__desk">
+                  Поруч із Тарасом Шевченком це найважливіша постать в українській культурі ХІХ століття...
+                </p>
+              </div>
+            </article>
+
+            <p class="news__bottom">Усі новини</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe main__subscribe" id="subscribe">
+        <div class="container">
+          <div class="subscribe__wrapper">
+            <h2 class="subscribe__title main__title">Підпишіться на дайджест</h2>
+            <div class="subscribe__info">
+              <p class="subscribe__desc">
+                Першими дізнавайтесь про новини музею та розіграші, отримуйте запрошення на події та читайте статті від кураторів
+              </p>
+              <form class="subscribe__form" action="">
+                <input
+                  class="subscribe__email"
+                  type="email"
+                  name="email"
+                  placeholder="e-mail"
+                  required
+                  autocomplete="off"
+                >
+                <input
+                  id="button"
+                  type="submit"
+                  value=""
+                  hidden
+                >
+                <label for="button">
+                  <img
+                    class="subscribe__label-desktop"
+                    src="./images/arrow-desctop.svg"
+                    alt="arrow-desktop"
+                  >
+                  <img
+                    class="subscribe__label-tablet"
+                    src="./images/arrow-tablet.svg"
+                    alt="arrow-tablet"
+                  >
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="content-container footer__content-container">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <h3 class="footer__title">Контакти</h3>
+            <p class="footer__contacts-info">
+              Київ,
+              <br>
+              вул. М. Грушевського, 6
+              <br>
+              тел. 278-13-57,
+              <br>
+              278-74-54
+              <br>
+              <a class="footer__link" href="mailto:info@namu.kiev.ua">info@namu.kiev.ua</a>
+            </p>
+            <div class="footer__socials">
+              <a
+                href="https://www.facebook.com/namu.museum/about/"
+                target="_blank"
+                rel="noopener"
+                class="footer__socials__link"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/facebook.svg"
+                  alt="facebook-logo"
+                >
+              </a>
+              <a
+                href="https://twitter.com/namu_120?lang=en"
+                target="_blank"
+                rel="noopener"
+                class="footer__socials__link"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/twitter.svg"
+                  alt="twitter-logo"
+                >
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="footer__socials__link"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/telegram.svg"
+                  alt="telegram-logo"
+                >
+              </a>
+              <a
+                href="https://www.instagram.com/namu.museum/?hl=en"
+                target="_blank"
+                rel="noopener"
+                class="footer__socials__link"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/instagram.svg"
+                  alt="instagram-logo"
+                >
+              </a>
+
+            </div>
+          </div>
+
+          <div class="footer__schedule">
+            <h3 class="footer__title">Розклад роботи</h3>
+            <pre class="footer__days">пн   вихідний</pre>
+            <pre class="footer__days">вт   вихідний</pre>
+            <pre class="footer__days">ср   10:00 - 17:00</pre>
+            <pre class="footer__days">чт   10:00 - 17:00</pre>
+            <pre class="footer__days">пт   12:00 - 19:00</pre>
+            <pre class="footer__days">сб   11:00 - 18:00</pre>
+            <pre class="footer__days">нд   10:00 - 17:00</pre>
+          </div>
+
+          <div class="footer__programs">
+            <h3 class="footer__title">Членські програми</h3>
+            <nav class="footer__programs-list">
+              <li class="footer__programs-item">
+                <a href="#" class="footer__programs-link">Зробити разовий внесок</a>
+              </li>
+              <li class="footer__programs-item">
+                <a href="#" class="footer__programs-link">Індивідуальна</a>
+              </li>
+              <li class="footer__programs-item">
+                <a href="#" class="footer__programs-link">Корпоративна</a>
+              </li>
+            </nav>
+          </div>
+
+          <div class="footer__about">
+            <h3 class="footer__title">Про нас</h3>
+            <nav class="footer__about-list">
+              <li class="footer__about-item">
+                <a href="#" class="footer__about-link">Історія</a>
+              </li>
+              <li class="footer__about-item">
+                <a href="#" class="footer__about-link">Обличчя музею</a>
+              </li>
+              <li class="footer__about-item">
+                <a href="#" class="footer__about-link">Вакансії</a>
+              </li>
+              <li class="footer__about-item">
+                <a href="#news" class="footer__about-link">Новини</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span class="footer__copy">© 2010 — 2020</span>
+          <span class="footer__privacy">Privacy — Terms</span>
+        </div>
+
+        <a class="footer__arrow" href="#home">
+          <img src="./images/arrow-top.svg" alt="arrow_top">
+        </a>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
+
 </html>
